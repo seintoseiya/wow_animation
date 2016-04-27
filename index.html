@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Seiya Tanaka">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<title>WOW.js+animation.cssでアニメーション</title>
+	<link rel="stylesheet" href="./css/animate.css">
+	<link type="text/css" rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="container">
+		<h2>FadeIn</h2>
+		<img src="./images/bird.jpg" class="wow fadeIn" data-wow-duration="2s">
+		<p>class="wow fadeIn" data-wow-duration="2s"</p>
+	</div>
+	<div class="container">
+		<h2>Bounce</h2>
+		<img src="./images/bird.jpg" class="wow bounce" data-wow-duration="2s" data-wow-iteration="infinite" data-wow-delay="300ms">
+		<p>class="wow bounce" data-wow-duration="2s" data-wow-iteration="infinite" data-wow-delay="300ms"</p>
+	</div>			
+	<div class="container">
+		<h2>Flip (data-wow-offset="10")</h2>
+		<img src="./images/bird.jpg" class="wow flip" data-wow-duration="6s" data-wow-offset="10">
+		<p>class="wow flip" data-wow-duration="6s" data-wow-offset="10"</p>
+	</div>
+	<div class="container">
+		<h2>Flip (data-wow-offset="200")</h2>
+		<img src="./images/bird.jpg" class="wow flip" data-wow-duration="6s" data-wow-offset="200">
+		<p>class="wow flip" data-wow-duration="6s" data-wow-offset="200"</p>
+	</div>
+	<script src="./js/wow.js"></script>
+	<script type="text/javascript">
+		new WOW().init();
+	</script>
+</body>
+</html>
